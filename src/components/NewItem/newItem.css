@@ -1,0 +1,76 @@
+.overlay {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 48, 48, 0.5);
+}
+
+.new-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 90%;
+  max-width: 60em;
+  padding: 2em 0;
+  height: auto;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  z-index: 6;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.close-card {
+  cursor: pointer;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0.65em;
+  right: 1em;
+}
+
+.new-item h3 {
+  margin: 0;
+  font-size: 1.75em;
+}
+
+.new-item-form div {
+  display: flex;
+  gap: 2.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-item-form label {
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+}
+.new-item-form label input,
+.new-item-form label select {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+  background-color: white;
+}
+
+.new-item-form .confirm-btn {
+  margin-top: 2.5em;
+}
+
+@media screen and (max-width: 1100px) {
+  .new-item-form div {
+    flex-direction: column;
+  }
+}
